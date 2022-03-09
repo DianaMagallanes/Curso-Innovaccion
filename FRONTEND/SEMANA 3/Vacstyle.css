@@ -44,6 +44,7 @@ p{
     background-color:rgb(240, 244, 255);
     border-radius: 4px;
     padding:0.5em;
+    height: 1em; /*PARA QUE EL BACKGROUNG DE ICON NO CREZCA DEMAS*/
   }
   
 .fa-amarillo
@@ -138,6 +139,11 @@ display: flex;
     align-items: center;
     justify-content: center;
 }
+.principalLeftPointItem-align
+{
+    margin-left: -9%; 
+    margin-top: 8%;
+}
 
 .scheduleData
 {
@@ -215,4 +221,109 @@ display: flex;
     border-color: rgb(249, 249, 255);
     border-radius: 4px;
     padding: 2% 2% 4% 2%;
+}
+
+/*PREPARATIONS*/
+.preparations
+{   
+    width: 100%;
+    height: 100%;
+    background-image: url("./img/dos.jpg");
+    background-size: cover;
+    display: flex; 
+    justify-content: flex-end;
+}
+
+.preparationsRight
+{
+    width: 50%;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.preparationsPointItem
+{
+    display: flex; 
+    gap: 10px 10px;
+    width: 60%;
+    align-items: center;
+    justify-content: flex-start;
+    border-style: solid;
+    border-color: rgb(249, 249, 255);
+    border-radius: 4px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+/*EMERGENCY*/
+
+.emergency
+{   
+    width: 100%;
+    height: 100%;
+    background-image: url("./img/tres.jpg");
+    background-size: cover;
+    display: flex; 
+}
+.emergencyLeft
+{
+    width: 50%;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.emergencyRow
+{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+.emergencyCard
+{
+    width:250px;
+    height: 200px;
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border-style: solid;
+    border-color: rgb(249, 249, 255);
+    border-radius: 4px;    
+    padding-left: 5%;
+    margin-bottom: 2%;
+}
+
+.emergencyCardRow
+{
+    display: flex;
+    gap: 10px;
+}
+.emergencyCardRowData
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.emergencyButton
+{
+    font-size: 20px;
+    font-weight: 700;
+    color:rgb(42, 74, 200);
+    background-color: rgb(240, 244, 255);
+    border-radius: 4px; 
+    box-shadow: none;
+    border:0;
+    height: 50px;
+    width: 80%;
+    padding: 13px 8%;
+}
+
+.emergencyButtonDark
+{   
+    font-weight: 700;
+    width: 80%;
 }
