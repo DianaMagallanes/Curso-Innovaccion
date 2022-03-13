@@ -107,12 +107,28 @@
                vaccine work:</p>
 
                <div class="preparationsPointItem"><i class="fa fa-times" aria-hidden="true"></i> <h4>Avoid alcoholic beverages</h4><i class="fa fa-caret-down" aria-hidden="true"></i></div>
-               <div class="preparationsPointItem"><i class="fa fa-times" aria-hidden="true"></i> <h4>Avoid stress</h4><i class="fa fa-caret-down" aria-hidden="true"></i></div>
+               <div class="content"></div>
+               <!-- <div class="preparationsPointItem"><i class="fa fa-times" aria-hidden="true"></i> <h4>Avoid stress</h4><i class="fa fa-caret-down" aria-hidden="true"></i></div> -->
+               
+                <div class="preparationsPointItem collapsible"><i class="fa fa-times" aria-hidden="true"></i> <h4>Avoid stress</h4><i class="fa fa-caret-down" aria-hidden="true"></i></div>
+                <div class="content">
+                <p class="a-small">Stress has a profound effect on immune work.<br>
+                Moreover, prolonged stress can increase cortisol <br>
+                production and oxidative stress in the body.</p>
+                </div>
+               
                <div class="preparationsPointItem"><i class="fa fa-cutlery" aria-hidden="true"></i> <h4>Eat healthy food</h4><i class="fa fa-caret-down" aria-hidden="true"></i></div>
+               <div class="content"></div>
                <div class="preparationsPointItem"><i class="fa fa-check" aria-hidden="true"></i> <h4>Get enough sleep</h4><i class="fa fa-caret-down" aria-hidden="true"></i></div>
+               <div class="content"></div>
                <div class="preparationsPointItem"><i class="fa fa-heartbeat" aria-hidden="true"></i> <h4>Exercise or physical activity</h4><i class="fa fa-caret-down" aria-hidden="true"></i></div>
-            </div>
+               <div class="content"></div>
+
+           
+        </div>
         </section>
+
+        <div class="separacion"></div>
 
         <section class="emergency">
             <div class="emergencyLeft">
@@ -171,6 +187,66 @@
             </div>
 
         </section>
+
+        <div class="separacion"></div>
+        
+        <footer>
+            <div class="footerSide">
+                <h3 class="h3-color">Vaccination</h3>
+                <p class="a-small">Our goal is to help the <br>
+                world free from the <br>
+                ongoing pandemic</p>
+            </div>
+
+            <div class="footerSide2">
+                <div class="footerSideMenu">
+                    <h3>About</h3>
+                    <a href="#" class="a-small">About Us</a>
+                    <a href="#" class="a-small">Features</a>
+                    <a href="#" class="a-small">News & Blog</a>
+                </div>
+                <div class="footerSideMenu">
+                    <h3>Company</h3>
+                    <a href="#" class="a-small">How We Work?</a>
+                    <a href="#" class="a-small">Capital</a>
+                    <a href="#" class="a-small">Security</a>
+                </div>
+                <div class="footerSideMenu"> 
+                    <h3>Support</h3>
+                    <a href="#" class="a-small">FAQs</a>
+                    <a href="#" class="a-small">Support Center</a>
+                    <a href="#" class="a-small">Contact Us</a>
+                </div>
+            </div>    
+            
+            <div class="footer-row">
+                <div class="footer-rowSide">
+                    <a class="a-small">@<script>document.write(new Date().getFullYear())</script> Vaccination.All rights reserved</a>
+                </div>
+                <div class="footer-rowSide2">
+                    <a href="#" class="a-small">Terms & Agreements</a>
+                    <a href="#" class="a-small a-recorrerFooter">Privacy Policy</a>
+                </div>
+            </div>
+        </footer>
        
-       
+
+
+        <script>
+            var coll = document.getElementsByClassName("preparationsPointItem");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                  content.style.display = "none";
+                } else {
+                  content.style.display = "block";
+                }
+              });
+            }
+            </script>    
     </body>
+    </html>
