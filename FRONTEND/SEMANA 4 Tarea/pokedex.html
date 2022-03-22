@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Pokedex LaunchX</title>     
+    </head>
+    <body onload="imprimirRandom()">
+        <div class="top">
+            <img src="./assets/logo.png" class="logo"/>
+        </div>
+
+        <div class="PokedexFull">
+            <div class="PokedexLado PokedexLadoIzq">           
+                
+                <div class="Busqueda">
+                    <input type="text" class="inputText" placeholder="Escribe el nombre del Pokemon" id="pokeName" name="pokeName">
+                    <button class="button" onclick="imprimir()">Buscar</button>
+                    <button class="button" onclick="imprimirRandom()">Random</button>
+                </div>
+                   
+                <div class="LadoIzqInf">
+                    <div class="pokemonImg">
+                        <img src="" alt="Pokemon" id="pokeImg">
+                    </div>
+                    <div class="LineaEncabezado">
+                        <h1 class="FuenteEncabezado">Nombre:</h1>
+                        <h1 id="pokeNombre" name="pokeNombre"></h1>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="PokedexLado PokedexLadoDer">
+
+            <div class="Linea">
+                <div class="LineaEncabezado">
+                    <h2 class="FuenteEncabezado">Tipo:</h2>
+                    <h2 id="pokeTipo" name="pokeTipo"></h2>
+                </div>
+            </div>
+            
+            <div class="Linea">
+                <div class="PesoAlto">
+                    <div class="LineaEncabezado">
+                        <h2 class="FuenteEncabezado">Altura:</h2>
+                         <h2 id="height" name="height"></h2>
+                    </div>
+                </div>
+                <div class="PesoAlto">    
+                    <div class="LineaEncabezado">
+                        <h2 class="FuenteEncabezado">Peso:</h2>             
+                        <h2 id="weight" name="weight"></h2>
+                    </div>
+                </div>
+            </div>            
+           
+
+            <div class="Linea">
+                <div>
+                    <h3 id="ebHP">HP</h3>
+                    <progress id="pgHP"  name="pgBar" value="1" max="255"></progress>
+                </div>
+                <div>
+                    <h3 id="ebAttack">Attack</h3>
+                    <progress id="pgAttack" name="pgBar" value="1" max="255"></progress>
+                </div>
+                <div>
+                    <h3 id="ebDefense">Defense</h3>
+                    <progress id="pgDefense" name="pgBar" value="1" max="255"></progress>
+                </div>
+            </div>
+
+            <div class="Linea">
+                <div>
+                    <h3 id="ebSA">Special-Attack</h3>
+                    <progress id="pgSpecialA" name="pgBar" value="1" max="255"></progress>
+                </div>
+                <div>
+                    <h3 id="ebSD">Special-Defense</h3>
+                    <progress id="pgSpecialD" name="pgBar" value="1" max="255"></progress>
+                </div>
+                <div>
+                    <h3 id="ebSpeed">Speed</h3>
+                    <progress id="pgSpeed" name="pgBar" value="1" max="255"></progress>
+                </div>
+            </div>
+            
+            <div class="Linea">
+                <h2 class="FuenteEncabezado">Habilidades</h2>
+            </div>
+
+            <div class="Habilidades">
+                <p id="pokeMovimientos"></p>  
+            </div>
+            </div>   
+       </div> 
+
+    </body>
+    <footer> <script src="./pokedex.js"></script> </footer>
+</html>
